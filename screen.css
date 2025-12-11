@@ -1,0 +1,30 @@
+/*背景板*/
+body{
+    background-color:lightpink;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.music-control{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.music-btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}

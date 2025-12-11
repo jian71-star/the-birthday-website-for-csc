@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Happy Birthday</title>
+        <link rel="stylesheet" href="screen.css"> 
+    </head>
+    
+    <body>
+        <audio id = bgm src="test.mp3" loop></audio> 
+        
+        <div class="music-control">
+            <button id = "music-switch" class="music-btn"></button>
+        </div>
+
+        <!--login page-->
+        <section id="login-screen" class= "page active">
+            <h1> 生日快樂 </h1>
+            <input type = "text" id = "username" class = "input box" value = "莊善淳" readonly>
+            <br>
+            <input type ="password" id ="passwd" class = "input-box" placeholder = "請輸入密碼">
+            <button id = "enter-botton" class = "enter-btn">請進</button>
+        </section>
+        
+        <!--animation page-->
+        <section id = "animation-screen" class = "page">
+            <!-- 3 2 1 -->
+            <div id = "step-countdown" class = "step">
+                <canvas id ="canvas-countdown" width="800" height="600"></canvas>
+            </div>
+
+            <!--Hi your name-->
+            <div id = "your-name" class="step">
+                <canvas id="canvas-name" width="800" height="600"></canvas> 
+            </div>
+        </section>
+        <script src="login-btn.js"></script>
+    </body>
+</html>
